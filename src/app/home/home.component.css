@@ -1,0 +1,44 @@
+/* img {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(100px);
+
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+} */
+
+/* h5,
+p {
+  color: black;
+} */
+
+img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  padding: 5px;
+  width: 150px;
+}
+
+h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}

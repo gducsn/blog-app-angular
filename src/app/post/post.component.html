@@ -1,0 +1,34 @@
+<h1 class="h3 mb-4">Post</h1>
+
+<article class="d-flex justify-content-center flex-column align-items-center">
+  <div #div class="cards mt-3 card mb-3 p-5 shadow w-100 sm:w-100"
+    *ngFor="let element of articles[0]; let index = index;">
+    <img [src]="element.urlToImage" class="img-fluid hover-zoom" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{element.title}}</h5>
+      <p class="card-text">{{element.description}}</p>
+      <!-- separa da qui -->
+
+      <div class="closeCard" [class.openCard]="onOffButton">
+        <div class="card-body">
+          <p class="card-text">{{element.content}}</p>
+          <div class=" d-flex justify-content-start">
+            <button #childElement class="btn btn-dark" type=" submit" (click)="closeValue()">Close...</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div [class.closeCard]="onOffButton">
+        <div class="d-flex justify-content-start">
+          <button class="btn btn-dark" type=" submit" (click)="changeValue(index)">More...</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</article>
